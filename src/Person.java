@@ -3,12 +3,18 @@
 
 public class Person
 {
-	String firstname;
-	String lastname;
-	int age;
-	Boolean male; //note: male=true means a male, male=false means a female
+	private String firstname;
+	private String lastname;
+	private int age;
+	private boolean male; //note: male=true means a male, male=false means a female (SORRY all women!!)
 						// (We learn a more intuitive way to do this later)
-	
+
+	public Person(String firstname, String lastname, int age, boolean male) {
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.age = age;
+		this.male = male;
+	}
 	
 	//The methods has to work no matter what the actual values
 	//are for the personobject in question!

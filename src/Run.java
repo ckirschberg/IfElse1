@@ -2,13 +2,8 @@ public class Run
 {
 	public static void main(String[] args)
 	{
-		Person person1 = new Person();
-		person1.age = 12;
-		person1.firstname = "Peter";
-		person1.lastname = "Jensen";
-		person1.male = true;
-		
-				
+		Person person1 = new Person("Peter", "Jensen", 12, true);
+
 		System.out.println("Is persons age 12: " + person1.isAge(12));
 		System.out.println("Is persons name Peter Jensen: " + person1.IsPersonsName("Peter Jensen"));
 		System.out.println("Is persons name not Peter Jensen: " + person1.IsPersonsNameNot("Peter Jensen"));
